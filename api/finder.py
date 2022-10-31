@@ -14,6 +14,7 @@ class handler(BaseHTTPRequestHandler):
         query_params = dict(parse.parse_qsl(url_components.query))
         country = query_params['country']
         capital = query_params['capital']
+         
 
         if country:
             url = base_url + f'name/{country}'
